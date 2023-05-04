@@ -1,0 +1,11 @@
+Create Database SchoolDB;
+use SchoolDB;
+select * from student where gender = "F";
+select first_name, last_name, street_address from student where state = 'California';
+select * from student order by last_name asc;
+select * from computer where brand = "HP";
+select * from computer where computer.type = "Desktop";
+select class.subject, class.credit_hours from class;
+select * from class where class.subject = "Physics 100" or class.subject = "Programming 200";
+select locker_number, combination from locker;
+select class.subject, class.credit_hours from class where class.credit_hours = 4;
